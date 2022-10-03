@@ -1,18 +1,18 @@
 import React from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import Converter from './pages/Converter';
-import Quiz from './pages/Quiz';
+import ConverterPage from './pages/converter.page';
+import QuizPage from './pages/quiz.page';
 
 function App() {
 
   return (
     <div className="App">
       <BrowserRouter>
-      <Routes>
-        <Route key="*" path="*" element={<Navigate to="/converter" replace />}/>
-        <Route key="/converter" path="/converter" element={<Converter/>}/>
-        <Route key="/quiz" path="/quiz" element={<Quiz/>}/>
-      </Routes>
+        <Routes>
+          <Route key="*" path="*" element={<Navigate to="/converter" replace />} />
+          <Route key="/converter" path="/converter" element={<ConverterPage />} />
+          <Route key="/quiz" path="/quiz" element={<QuizPage />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );

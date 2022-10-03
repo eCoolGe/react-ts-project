@@ -1,9 +1,9 @@
 import { useState, useRef, useEffect } from "react"
-import СurrenciesService from "../API/СurrenciesService"
-import { useFetching } from "../hooks/useFetching"
-import IRates from "../interfaces/rates.interface"
-import { CurrencyConverterBlock } from "./UI/CurrencyConverterBlock/CurrencyConverterBlock"
-import Loader from "./UI/Loader/Loader"
+import СurrenciesService from "../../API/СurrenciesService"
+import { useFetching } from "../../hooks/useFetching"
+import IRates from "../../interfaces/rates.interface"
+import { CurrencyConverterBlock } from "./CurrencyConverterBlock/CurrencyConverterBlock"
+import Loader from "../UI/Loader/Loader"
 
 const CurrencyConverter = () => {
     const [fromCurrency, setFromCurrency] = useState('USD')
@@ -53,7 +53,7 @@ const CurrencyConverter = () => {
                         ?
                         <Loader />
                         :
-                        <div className="CurrencyConverter">
+                        <div className="grid">
                             <CurrencyConverterBlock
                                 value={fromPrice}
                                 onChangeValue={onChangeFromPrice}

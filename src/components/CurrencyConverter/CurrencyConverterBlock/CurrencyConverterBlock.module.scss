@@ -9,6 +9,8 @@
       margin-top: 20px;
       border-radius: 5px;
       width: 100%;
+      font-family: 'Inter', system-ui !important;
+      box-sizing: border-box;
     }
   }
   
@@ -22,6 +24,7 @@
     overflow: hidden;
   
     li {
+      box-sizing: border-box;
       display: inline-flex;
       padding: 10px 20px;
       border-right: 1px solid rgba(0, 0, 0, 0.05);
