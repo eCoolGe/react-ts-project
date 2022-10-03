@@ -9,7 +9,7 @@ const questions = [
         correct: 0,
     },
     {
-        title: 'Компонент - это ... ',
+        title: 'Компонент - это ... ?',
         variants: [
             'приложение',
             'часть приложения или страницы',
@@ -26,6 +26,17 @@ const questions = [
         ],
         correct: 2,
     },
+    {
+        title: 'Что такое TSX?',
+        variants: [
+            'Это простой HTML',
+            'Не знаю',
+            'Это файл TypeScript, написанный с использованием синтаксиса JSX.',
+            'Это функция',
+            'Это тот же HTML, но с возможностью выполнять JS-код',
+        ],
+        correct: 2,
+    }
 ];
 
 export default questions
